@@ -1,0 +1,16 @@
+transformers==4.25
+torch==2.4.0
+torchvision==0.12.0
+opencv-python==4.8.1.78
+scipy
+pandas
+scikit-learn
+timm==0.9.10
+fairscale
+numpy==2.2.6
+opencv-python
+einops
+scipy
+termcolor
+pandas
+radgraph==0.0.9
