@@ -1,0 +1,29 @@
+test_file: '/data/VLM/data/covid_rural/test.csv'
+disease_book: 'observation explanation.json'
+concept_book: '../Pretrain/concept_gen/gpt4_mimic_covidr.json'
+
+dataset: 'covid-r'
+root: '/data/VLM/data/covid_rural'
+target: 'covid19'
+model_path: '../checkpoints/checkpoint_full_40.pth'
+
+
+image_res: 224
+test_batch_size: 512
+
+model: mavl
+d_model: 256
+base_model: 'resnet50'
+decoder: cross
+num_queries: 75
+dropout: 0.1
+attribute_set_size: 2
+N: 4
+H: 4
+text_encoder: 'emilyalsentzer/Bio_ClinicalBERT'
+pretrained: True
+self_attention: True
+mode: avg
+
+
+
